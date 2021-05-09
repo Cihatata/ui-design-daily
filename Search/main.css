@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --purple: #a68fff;
+  --blue: #8fbcff;
+  --red: #ff8faa;
+  --green: #a6cd74;
+  --orange: #fcc18a;
+  --turquoise: #6edddd;
+  --font-color: #2b417b;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f2f0ff;
+}
+
+.card {
+  box-shadow: 0px 24px 45px -15px rgba(161, 159, 219, 0.41);
+  border-radius: 15px;
+  width: 100%;
+  max-width: 609px;
+  padding: 70px;
+  background-color: #ffffff;
+}
+
+.input-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #d0cde2;
+  padding: 20px 15px;
+}
+
+.input-wrapper input {
+  border: none;
+  width: 100%;
+  outline: none;
+  color: var(--font-color);
+  font-size: 18px;
+}
+
+.input-wrapper input::placeholder {
+  color: var(--font-color);
+}
+
+.input-icon {
+  margin-right: 5px;
+}
+
+.input-wrapper:focus-within {
+  border-bottom: 1px solid var(--font-color);
+}
+
+.suggests {
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.suggest-card {
+  width: calc(100% / 3 - 14px);
+  height: 133px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.suggest-card::before {
+  content: "";
+  width: 81px;
+  height: 9px;
+  position: absolute;
+  top: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 0 auto;
+}
+
+.suggest-card-name {
+  margin-top: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--font-color);
+}
+
+.purple {
+  border-color: var(--purple);
+}
+
+.purple:hover {
+  background-color: rgba(166, 143, 255, 0.3);
+}
+
+.purple::before {
+  background-color: var(--purple);
+}
+
+.blue {
+  border-color: var(--blue);
+}
+
+.blue:hover {
+  background-color: rgba(143, 188, 255, 0.3);
+}
+
+.blue::before {
+  background-color: var(--blue);
+}
+
+.red {
+  border-color: var(--red);
+}
+
+.red:hover {
+  background-color: rgba(255, 143, 170, 0.3);
+}
+
+.red::before {
+  background-color: var(--red);
+}
+
+.green {
+  border-color: var(--green);
+}
+
+.green:hover {
+  background-color: rgba(166, 205, 116, 0.3);
+}
+
+.green::before {
+  background-color: var(--green);
+}
+
+.orange {
+  border-color: var(--orange);
+}
+
+.orange:hover {
+  background-color: rgba(252, 192, 138, 0.3);
+}
+
+.orange::before {
+  background-color: var(--orange);
+}
+
+.turquoise {
+  border-color: var(--turquoise);
+}
+
+.turquoise:hover {
+  background-color: rgba(110, 221, 221, 0.3);
+}
+
+.turquoise::before {
+  background-color: var(--turquoise);
+}
+
+@media (max-width: 575px) {
+  .suggest-card {
+    width: calc(100% / 2 - 10px);
+  }
+  .input-wrapper {
+    padding-bottom: 10px;
+  }
+  .input-wrapper input {
+    font-size: 14px;
+  }
+}
