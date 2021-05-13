@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: #f8efef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2,
+h4 {
+  color: #161843;
+}
+
+.h2 {
+  font-size: 36px;
+  line-height: 41px;
+  font-family: "Rokkitt", serif;
+}
+
+.h4 {
+  font-size: 16px;
+  line-height: 23px;
+  width: 340px;
+  margin-top: 16px;
+  font-weight: 400;
+}
+
+.card {
+  /* filter: blur(27px); */
+  display: flex;
+}
+
+.card form {
+  padding: 64px 90px 56px 90px;
+  background-color: #ffffff;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 610px;
+}
+
+.card form input {
+  border: 1px solid #cad6e4;
+  border-radius: 5px;
+  padding: 25px;
+  margin-top: 52px;
+  width: 100%;
+}
+
+.card form input::placeholder {
+  color: #717a91;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.actions-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.actions-top a {
+  font-size: 16px;
+  color: #0c6787;
+  text-decoration: none;
+}
+
+.arrow {
+  margin-left: 15px;
+}
+
+.actions-top .submit {
+  color: #ffffff;
+  background-color: #046586;
+  border-radius: 5px;
+  padding: 20px 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: 0 2px 5px 0 rgba(4, 101, 134, 0.65);
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: bold;
+}
+
+.divider {
+  margin-top: 55px;
+  border-top: 1px solid #cad6e4;
+  padding: 35px;
+  padding-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  color: #838a9e;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.actions-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.oauth-button {
+  border-radius: 5px;
+  padding: 10px 45px;
+  border: 1px solid #cad6e4;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oauth-button img,
+svg {
+  margin-right: 11px;
+}
+
+.redirect-signup {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+.redirect-signup a {
+  color: #046586;
+}
